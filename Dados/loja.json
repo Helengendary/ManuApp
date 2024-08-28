@@ -4,7 +4,7 @@
     "descricao": "Caneca Ariana Grande Personalizavel",
     "imagem": "../imagens/CanecaAri.webp",
     "preco": 199.0,
-    "Status": true
+    "Status": false
   },
   {
     "id": 2,
@@ -18,7 +18,7 @@
     "descricao": "Caneca Beyonce",
     "imagem": "../imagens/Beyonce.webp",
     "preco": 30.0,
-    "Status": true
+    "Status": false
   },
   {
     "id": 4,
