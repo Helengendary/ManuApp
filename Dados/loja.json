@@ -1,20 +1,65 @@
 [
   {
     "id": 1,
-    "descricao": "Produto 1",
-    "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm3cExnsB3qat_a-YqS4zThCXsiR4TWk2f4_-Do7MXhw&s",
-    "preco": 10.0
+    "descricao": "Caneca Ariana Grande Personalizavel",
+    "imagem": "../imagens/CanecaAri.webp",
+    "preco": 199.0,
+    "Status": true
   },
   {
     "id": 2,
-    "descricao": "Produto 2",
-    "imagem": "https://storage.alboom.ninja/sites/7474/albuns/343827/fotografia-de-produtos-campinas-fotografo-publicidade-aloha-life-11.jpg?t=1541510096",
-    "preco": 20.0
+    "descricao": "Caneca Amy Winehouse",
+    "imagem": "../imagens/amyWinehouse.webp",
+    "preco": 20.0,
+    "Status": true
   },
   {
     "id": 3,
-    "descricao": "Produto 3",
-    "imagem": "https://skinquer.com.br/cdn/shop/articles/blogordem.jpg?v=1687270129",
-    "preco": 30.0
+    "descricao": "Caneca Beyonce",
+    "imagem": "../imagens/Beyonce.webp",
+    "preco": 30.0,
+    "Status": true
+  },
+  {
+    "id": 4,
+    "descricao": "Caneca Harry Style",
+    "imagem": "../imagens/harryStyles.webp",
+    "preco": 30.0,
+    "Status": true
+  },
+  {
+    "id": 5,
+    "descricao": "Caneca Katy Perry",
+    "imagem": "../imagens/katyPerry.webp",
+    "preco": 30.0,
+    "Status": true
+  },
+  {
+    "id": 6,
+    "descricao": "Caneca Lady Gaga",
+    "imagem": "../imagens/ladyGaga.webp",
+    "preco": 30.0,
+    "Status": true
+  },
+  {
+    "id": 7,
+    "descricao": "Caneca Neymar",
+    "imagem": "../imagens/neymar.webp",
+    "preco": 30.0,
+    "Status": true
+  },
+  {
+    "id": 8,
+    "descricao": "Caneca Tom Holland",
+    "imagem": "../imagens/tomHolland.webp",
+    "preco": 30.0,
+    "Status": true
+  },
+  {
+    "id": 9,
+    "descricao": "Caneca Zendaya",
+    "imagem": "../imagens/zendaya.webp",
+    "preco": 30.0,
+    "Status": true
   }
 ]
