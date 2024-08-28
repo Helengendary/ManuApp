@@ -15,17 +15,14 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((data) => {
       produtos = data;
       const produtosContainer =
-        document.getElementsById("produtos-container");
+        document.getElementById("produtos-container");
 
       produtos.forEach((produto, index) => {
         const card = document.createElement("div");
         card.className = "card";
-        card.style.width = "18rem";
-        card.style.marginRight = "10px";
 
         const imagem = document.createElement("img");
         imagem.src = produto.imagem;
-        imagem.className = "card-img-top";
 
         const cardBody = document.createElement("div");
         cardBody.className = "card-body";
@@ -41,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const btnAdicionarAoCarrinho = document.createElement("a");
         btnAdicionarAoCarrinho.href = "#";
         btnAdicionarAoCarrinho.className =
-          "btn btn-primary btn-adicionar-ao-carrinho";
+          "btn";
         btnAdicionarAoCarrinho.textContent = "Adicionar ao Carrinho";
         btnAdicionarAoCarrinho.setAttribute("data-indice", index);
 
