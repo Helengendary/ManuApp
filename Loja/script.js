@@ -36,32 +36,33 @@ document.addEventListener("DOMContentLoaded", function () {
         cardText.textContent = "Preço: $" + produto.preco.toFixed(2);
 
         const btnAdicionarAoCarrinho = document.createElement("a");
-        btnAdicionarAoCarrinho.href = "javascript:alert('Produto adicionado ao carrinho')";
-        btnAdicionarAoCarrinho.className = "btn"; 
+        btnAdicionarAoCarrinho.href = "#";
+        btnAdicionarAoCarrinho.className = "btn-add"; 
         btnAdicionarAoCarrinho.textContent = "Adicionar ao Carrinho";
         btnAdicionarAoCarrinho.setAttribute("data-indice", index);
-
+        
         cardBody.appendChild(cardTitle);
         cardBody.appendChild(cardText);
         cardBody.appendChild(btnAdicionarAoCarrinho);
-
+        
         card.appendChild(imagem);
         card.appendChild(cardBody);
-
+        
         produtosContainer.appendChild(card);
       });
     })
     .catch((error) => console.error("Erro ao carregar o arquivo JSON", error));
-
-  $("#produtos-container").on(
-    "click",
-    ".btn-adicionar-ao-carrinho",
-    function () {
-      const indexDoProduto = $(this).data("indice");
-      const produtoSelecionado = produtos[indexDoProduto];
+    
+    $("#produtos-container").on(
+      "click",
+      ".btn-add",
+      function () {
+        const indexDoProduto = $(this).data("indice");
+        const produtoSelecionado = produtos[indexDoProduto];
       let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
       carrinho.push(produtoSelecionado);
       localStorage.setItem("carrinho", JSON.stringify(carrinho));
+      alert("deu bom")
     }
   );
 });

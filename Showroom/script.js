@@ -38,16 +38,16 @@ document.addEventListener("DOMContentLoaded", function () {
           }
 
   
-          const btnAdicionarAoCarrinho = document.createElement("a");
-          btnAdicionarAoCarrinho.href = "#";
-          btnAdicionarAoCarrinho.className =
-            "btn btn-primary btn-adicionar-ao-carrinho";
-          btnAdicionarAoCarrinho.textContent = "Adicionar ao Carrinho";
-          btnAdicionarAoCarrinho.setAttribute("data-indice", index);
+          // const btnAdicionarAoCarrinho = document.createElement("a");
+          // btnAdicionarAoCarrinho.href = "#";
+          // btnAdicionarAoCarrinho.className =
+          //   "btn btn-primary btn-adicionar-ao-carrinho";
+          // btnAdicionarAoCarrinho.textContent = "Adicionar ao Carrinho";
+          // btnAdicionarAoCarrinho.setAttribute("data-indice", index);
   
           cardBody.appendChild(cardTitle);
           cardBody.appendChild(cardText);
-          cardBody.appendChild(btnAdicionarAoCarrinho);
+          // cardBody.appendChild(btnAdicionarAoCarrinho);
   
           card.appendChild(imagem);
           card.appendChild(cardBody);
@@ -58,16 +58,16 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .catch((error) => console.error("Erro ao carregar o arquivo JSON", error));
   
-    $("#produtos-container").on(
-      "click",
-      ".btn-adicionar-ao-carrinho",
-      function () {
-        const indexDoProduto = $(this).data("indice");
-        const produtoSelecionado = produtos[indexDoProduto];
-        let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
-        carrinho.push(produtoSelecionado);
-        localStorage.setItem("carrinho", JSON.stringify(carrinho));
-      }
-    );
+    // $("#produtos-container").on(
+    //   "click",
+    //   ".btn-adicionar-ao-carrinho",
+    //   function () {
+    //     const indexDoProduto = $(this).data("indice");
+    //     const produtoSelecionado = produtos[indexDoProduto];
+    //     let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+    //     carrinho.push(produtoSelecionado);
+    //     localStorage.setItem("carrinho", JSON.stringify(carrinho));
+    //   }
+    // );
   });
   
