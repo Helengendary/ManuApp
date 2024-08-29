@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
         cardText.textContent = "Preço: $" + produto.preco.toFixed(2);
 
         const btnAdicionarAoCarrinho = document.createElement("a");
-        btnAdicionarAoCarrinho.href = "#";
-        btnAdicionarAoCarrinho.className = "btn";
+        btnAdicionarAoCarrinho.href = "javascript:alert('Produto adicionado ao carrinho')";
+        btnAdicionarAoCarrinho.className = "btn"; 
         btnAdicionarAoCarrinho.textContent = "Adicionar ao Carrinho";
         btnAdicionarAoCarrinho.setAttribute("data-indice", index);
 

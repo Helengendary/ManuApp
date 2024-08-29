@@ -11,7 +11,7 @@ Simulacao de carrinho de compras com localStorage
 # 2 - Login - 2,5ptos (0,83 +/- cada)
 
 - <del> Implementar um modal para validação de login, que comunique com o usuario sua ação.</del>
-- Implementar a funcao que fecha o modal, entao dentro do modal deve haver um botao para isso.
+- <del> Implementar a funcao que fecha o modal, entao dentro do modal deve haver um botao para isso.</del>
 - <del>Fazer uma funcao para mostrar e nao mostrar senha, criar um icone clicavel de uma chave dentro do input de senha.</del>
 
 # 3 - Loja - 2,5ptos (0,3 +/- cada)
@@ -20,9 +20,9 @@ Simulacao de carrinho de compras com localStorage
 - <del>as imagens devem estar baixadas no projeto e nao serem usadas como url. </del>
 - <del>o Bootstrap deve ser retirado do projeto e a estilizacao dos cards da loja devem ser feitos via CSS.</del>
 - <del>descobrir o porque os produtos nao aparecem na loja.</del>
-- um alerta ou modal deve ser criado para validar a ação do usuario em incluir um produto no carrinho.
+- <del>um alerta ou modal deve ser criado para validar a ação do usuario em incluir um produto no carrinho.</del>
 - <del>o metodo map deve ser substituido por forEach. </del>
-- descobrir o porque os produtosContainer nao estao sendo lidos ja que existe um id "produtos-container" na tag html.
+- <del> descobrir o porque os produtosContainer nao estao sendo lidos ja que existe um id "produtos-container" na tag html.</del>
 - estilizar livremente porem de bom gosto a loja criando um arquivo .css.
 
 # 4 - Carrinho - 2,5ptos (0,65 +/- cada)
