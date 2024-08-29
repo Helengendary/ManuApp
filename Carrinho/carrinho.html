@@ -8,24 +8,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.0.1/mammoth.browser.min.js"></script>
 
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <style>
-      dialog {
-        display: none;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 20px;
-        background-color: green;
-        color: #ffff;
-        font-size: 1.4rem;
-      }
-
-    </style>
   </head>
   <body>
 
@@ -33,14 +20,19 @@
       <h1>Carrinho</h1>
     </header>
 
-    <a href="../Loja/loja.html">Continuar comprando</a>
+    <a id="irCompras" href="../Loja/loja.html">Continuar comprando</a>
 
 
     <div id="lista"></div>
 
-    <h3 id="total"></h3>
     
-    <button onclick="gerarDocumentoWord()">Realizar pedido</button>
+    <div id="totalPedido">
+      <div>
+        <h3 id="total"><h3 id="valor"></h3></h3>
+      </div>
+      <button id="realizar" onclick="gerarDocumentoWord()">Realizar pedido</button>
+    </div>
+
 
     <div>
       <dialog id="pedido">

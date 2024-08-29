@@ -1,0 +1,101 @@
+dialog {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: green;
+    color: #ffff;
+    font-size: 1.4rem;
+  }
+
+h1 {
+    text-align: center;
+}
+
+
+#irCompras {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 0.5%;
+    border-radius: 10px;
+    margin-left: 3%;
+}
+
+#irCompras:hover {
+    color: black;
+    text-decoration: underline;
+    background-color: white;
+}
+
+#lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+    color: white;
+    margin: 5% 30% 5% 30%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 30px;
+}
+
+li {
+    border: 1px solid white;
+    margin: 1%;
+    padding: 1%;
+    list-style: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+li button {
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: 900
+}
+
+li button:hover {
+    background-color: white;
+    border: none;
+    color: red;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#realizar {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 3%;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#realizar:hover {
+    color: black;
+    text-decoration: underline;
+    background-color: white;
+}
+
+#totalPedido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    margin-left: 40%;
+
+}
+
+h3 {
+    margin: 0px;
+    margin-bottom: 5%;
+    font-size: 30px;
+}

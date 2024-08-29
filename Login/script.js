@@ -1,22 +1,17 @@
-var senha = $("#senha");
-let apertado = false;
 
 function mostrar() {
+  var senha = document.querySelector("#senha");
 
-  apertado = !apertado;
-
-  if (apertado) {
-    
-    senha.attr("type", "text");
+  if (senha.getAttribute("type") === "password") {
+    senha.setAttribute("type", "text");
   } else {
-
-    senha.attr("type", "password");
+    senha.setAttribute("type", "password");
   }
 }
 
 function login() {
   var nome = $("#nome").val();
-  senha = senha.val();
+  var senha = $("#senha").val();
 
   if (nome && senha && nome === "admin" && senha === "admin") {
     const user = {

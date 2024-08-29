@@ -8,6 +8,7 @@ $(document).ready(function () {
 
   // Elemento para exibir o total em preço
   const totalElement = $("#total");
+  const totalValueElement = $("#valor");
 
   // Função para exibir o carrinho
   function exibirCarrinho() {
@@ -26,7 +27,7 @@ $(document).ready(function () {
 
       // Cria um botão de remoção
       const removeButton = $("<button>")
-        .text("❌")
+        .text("X")
         .css("margin-left", "10px")
         .click(function () {
           removerItemDoCarrinho(index);
@@ -43,7 +44,8 @@ $(document).ready(function () {
     });
 
     // Exibe o total em preço no elemento totalElement
-    totalElement.text(`Total: $${totalPreco.toFixed(2)}`);
+    totalElement.text(`Total: `);
+    totalValueElement.text(`$${totalPreco.toFixed(2)}`)
   }
 
   // Função para remover um item do carrinho

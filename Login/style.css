@@ -38,3 +38,35 @@ input {
   padding: 5px;
   border: 2px solid #909090;
 }
+
+#entrar {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  padding: 0.5%;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#entrar:hover {
+  color: black;
+  text-decoration: underline;
+  background-color: white;
+}
+
+.btn-add {
+  color: white;
+  background-color: blue;
+  border: blue;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+} 
+
+.btn-add:hover {
+  border: 1px solid blue;
+  background-color: white;
+  color: blue;
+} 
