@@ -1,6 +1,22 @@
+var senha = $("#senha");
+let apertado = false;
+
+function mostrar() {
+
+  apertado = !apertado;
+
+  if (apertado) {
+    
+    senha.attr("type", "text");
+  } else {
+
+    senha.attr("type", "password");
+  }
+}
+
 function login() {
   var nome = $("#nome").val();
-  var senha = $("#senha").val();
+  senha = senha.val();
 
   if (nome && senha && nome === "admin" && senha === "admin") {
     const user = {
