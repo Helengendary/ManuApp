@@ -26,6 +26,13 @@
           <span onclick="mostrar()" id="key" class="material-symbols-outlined key">key</span>
         </div>
         <button onclick="login()">Entrar</button>
+
+        <div class="modal">
+          <dialog id="modal">
+            <p>Usuário ou senha incorretos!</p>
+            <button onclick="document.getElementById('modal').close()">X</button>
+          </dialog>
+        </div>
       </div>
       <p><a href="../Showroom/showroom.html">Visitar showroom</a></p>
     </div>

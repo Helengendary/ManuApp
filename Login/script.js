@@ -29,6 +29,6 @@ function login() {
 
     window.location.href = "../Loja/loja.html";
   } else {
-    //logica para se o nome e senha forem incorretos
+    document.getElementById("modal").showModal();
   }
 }
